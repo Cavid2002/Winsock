@@ -1,0 +1,96 @@
+*{
+    color: white;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+body {
+    background-color: #2d2d31;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+div {
+    width: 600px;
+    margin: 5em auto;
+    padding: 2em;
+    background-color: #54549c;
+    border-radius: 0.5em;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+}
+a:link, a:visited {
+    color: #38488f;
+    text-decoration: none;
+}
+
+img, video{
+    height: 100%;
+    width: 100%;
+}
+
+input{
+    height: 90%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #2d2d31 !important;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: 0.1s;
+}
+
+input:hover{
+    outline: 4px solid rgb(42, 196, 49);
+}
+
+input:focus{
+    outline: 4px solid rgb(211, 50, 50);
+}
+
+tr,td{
+    height: 40px;
+}
+
+button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #2d2d31 !important;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.2s;
+    border: 4px solid #2d2d31;
+}
+
+button:hover{
+    background: #2d2d31;
+    color: white !important;
+    
+}
+
+.links li{
+    padding: 5px 0;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.links a:hover{
+    color: rgb(72, 194, 47);
+}
+
+@media (max-width: 700px) {
+    div {
+        margin: 0 auto;
+        width: auto;
+    }
+}
