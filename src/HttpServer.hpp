@@ -1,6 +1,6 @@
 #include"MYNET.hpp"
 
-#define BUFF_SIZE 2000
+#define BUFF_SIZE 1000
 #define PATH_SIZE 100
 #define ROUTE_COUNT 20
 
@@ -21,13 +21,15 @@ private:
     SOCKET l_sock;
     unsigned int q_size;    
 
+    void read_request(SOCKET cln_sock, char* request, char* path);
+
+    void make_response(SOCKET cln_sock, char* buff, char* path);
+
 public:
     
     HttpServer(int ip_family, int t_protocol, unsigned short port, unsigned int q_size);
 
-    void read_request(SOCKET cln_sock, char* request, char* path);
-
-    void make_response(SOCKET cln_sock, char* buff, char* path);
+    
 
     int run();
 
